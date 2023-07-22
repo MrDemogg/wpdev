@@ -4,11 +4,10 @@ ServerEvents.recipes(event => {
   
   // добавление крафта ItemId
   event.recipes.create.mechanicalCrafting('extendedcrafting:ender_star',[
-    '     ',
-    ' BBBB',
-    ' ACCA',
-    ' ACCA',
-    ' BBBB'
+    'BBBB',
+    'ACCA',
+    'ACCA',
+    'BBBB'
   ], {
     A: 'minecraft:diamond'
    ,B: 'minecraft:obsidian'

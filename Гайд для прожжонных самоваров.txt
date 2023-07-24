@@ -388,3 +388,6 @@ ServerEvents.recipes(event => {
   // добавление крафта ItemId
   event.recipes.create.filling(ItemId, [Fluid.of(FluidId, 10), ItemA])
 })
+
+
+Ну а теперь самый сложный и страшный из возможных типов крафта Create Последовательный сбор(можно уже боятся):

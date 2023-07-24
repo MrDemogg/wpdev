@@ -170,8 +170,212 @@ ServerEvents.recipes(event => {
 Также приеры лежат по пути .../KubeJS/server_scripts/mods/minecraft/...
 
 
+Ну а теперь иди пробуй
+
+Ну а типерь Create
+
+Для начала разберёмся со свойствами кравтов.
+
+1) ItemId то что мы хотим получить
+2) Если мы хотим получить более 1 предмета то в id предмета пишем напимер '2x minecraft:diamond' вместо 2 пиши нужное число(кстати это "x" буква икс англиская)
+
+3)Если мы хотим получить предмет с определённым шансом то вместо ItemId пишем Item.of(ItemId).withChance(0.3)
+В примере шанс 30% но его менять можно на какой угодно.
+
+4)Если мы хотим получить 2 вида предмета, то вместо ItemId пишем [ItemId1, ItemId2, ItemId3, ...]
+Например:
+event.recipes.create.compacting(['diamond', Item.of('diamond').withChance(0.3)], 'coal_block')
+
+5)ItemN то из чего делается 
+Буква N озночает любую букву.
+
+Для itemN свойствено:
+
+6)Если мы хотим использовать более 1 предмета то в id предмета пишем напимер '2x minecraft:diamond' вместо 2 пиши нужное число(кстати это "x" буква икс англиская)
+
+7)Если мы хотим использовать 2 вида предмета, то вместо ItemId пишем [ItemA, ItemB, ItemC, ...]
+Например:
+event.recipes.create.compacting('diamond', ['2x coal_block', 'coal'])
+
+8)Чтобы зделать крафт с нагревом !!!ЧАШИ!!! нужно добавить (.heated()) для нагрев или (.superheated()) для перегрева
+примеры:
+  event.recipes.create.compacting(ItemId, ItemA).heated()  // Нагретый  
+  event.recipes.create.compacting(ItemId, ItemA).superheated() // Перегретый
+
+9)Также в крафт можно добавить жидкости
+Вместо ItemId или ItemN пишем Fluid.of(FluidId, 10)
+В примере 10 значит количество в мили бакитах (mb) в 1 ведре(b) = 1000 mb
+
+FluidId-это Id житкасти
+
+10) Можно добавить .processingTime(time) 
+time это время в Милисекундах за которые будет зделан крафт на скорости 256
+например:
+  event.recipes.create.crushing('7x diamond', 'coal_block').processingTime(500)
+
+11)Можно добавить .keepHeldItem()
+Придмет ItemB !!!НЕ БУДЕТ ТРАТИТСЯ!!!
+например:
+  event.recipes.create.deploying(['13x diamond', 'emerald'], ['coal_block', 'sand']).keepHeldItem()
 
 
+А вот шаблон пресса с чашей
+Для него свойственно 1 2 3 4 5 6 7 8 9
 
+ServerEvents.recipes(event => {
+  // удаление крафта всех кравтов ItemId
+  event.remove({output: ItemId})
+  
+  // добавление крафта ItemId
+  event.recipes.create.compacting(ItemId, ItemA)
+})
+
+Это шаблон колес дробления
+Для него свойственно 1 2 3 4 5 10
+
+ServerEvents.recipes(event => {
+  // удаление крафта всех кравтов ItemId
+  event.remove({output: ItemId})
+  
+  // добавление крафта ItemId
+  event.recipes.create.crushing(ItemId, ItemA)
+})
+
+Это шаблон механической пилы
+Для него свойственно 1 2 3 4 5 10
+
+ServerEvents.recipes(event => {
+  // удаление крафта всех кравтов ItemId
+  event.remove({output: ItemId})
+  
+  // добавление крафта ItemId
+  event.recipes.create.cutting(ItemId, ItemA)
+})
+
+
+Это шаблон авто руки и депо
+Для него свойственно 1 2 3 4 5 11
+
+ItemA Лежит на депо 
+ItemB Держит рука
+
+ServerEvents.recipes(event => {
+  // удаление крафта всех кравтов ItemId
+  event.remove({output: ItemId})
+  
+  // добавление крафта ItemId
+  event.recipes.create.deploying(ItemId, [ItemA, ItemB])
+})
+
+  
+Это шаблон осушителя предметов
+Для него свойственно 1 2 3 4 5 9
+
+ServerEvents.recipes(event => {
+  // удаление крафта всех кравтов ItemId
+  event.remove({output: ItemId})
+  
+  // добавление крафта ItemId
+  event.recipes.create.emptying([Fluid.of(FluidId, mb), ItemId], ItemA)
+})
+
+
+Это шаблон Призрочного наполнения (Вентиляторв с огнём душ)
+Для него свойственно 1 2 3 4 5 
+
+ServerEvents.recipes(event => {
+  // удаление крафта всех кравтов ItemId
+  event.remove({output: ItemId})
+  
+  // добавление крафта ItemId
+  event.recipes.create.haunting(ItemId, ItemA)
+})
+
+
+Это шаблон Массовая промывка (Вентиляторв с водой)
+Для него свойственно 1 2 3 4 5 
+
+ServerEvents.recipes(event => {
+  // удаление крафта всех кравтов ItemId
+  event.remove({output: ItemId})
+  
+  // добавление крафта ItemId
+  event.recipes.create.splashing(ItemId, ItemA)
+})
+
+
+Шаблон мефанического сборщика
+Для него свойственно 1 2
+поле пожно увеличивать без ограничений
+
+ServerEvents.recipes(event => {
+  // удаление крафта всех кравтов ItemId
+  event.remove({output: ItemId})
+  
+  // добавление крафта ItemId
+  event.recipes.create.mechanicalCrafting(, [
+    '     ',
+    '     ',
+    '     ',
+    '     ',
+    '     '
+  ], {
+//    A: ItemA
+//   ,B: ItemB
+//   ,C: ItemC
+//   ,D: ItemD
+//   ,E: ItemE
+//   ,F: ItemF
+//   ,G: ItemG
+//   ,H: ItemH
+//   ,I: ItemI
+  })
+})
+
+
+Это шаблон для жернов
+Для него свойственно 1 2 3 4 5 10
+
+ServerEvents.recipes(event => {
+  // удаление крафта всех кравтов ItemId
+  event.remove({output: ItemId})
+  
+  // добавление крафта ItemId
+  event.recipes.create.milling(ItemId, ItemA)
+})
+
+
+Это шаблон для Миксера
+Для него свойственно 1 2 3 4 5 6 7 8 9 
+
+ServerEvents.recipes(event => {
+  // удаление крафта всех кравтов ItemId
+  event.remove({output: ItemId})
+  
+  // добавление крафта ItemId
+  event.recipes.create.mixing(ItemId, ItemA)
+})
+
+Это шаблон пресса
+Для него свойственно 1 2 3 4 5 6 7
+
+ServerEvents.recipes(event => {
+  // удаление крафта всех кравтов ItemId
+  event.remove({output: ItemId})
+  
+  // добавление крафта ItemId
+  event.recipes.create.pressing(ItemId, ItemA)
+})
+
+Это шаблон наждачки
+Для него свойственно 1 2 3 4 5
+
+ServerEvents.recipes(event => {
+  // удаление крафта всех кравтов ItemId
+  event.remove({output: ItemId})
+  
+  // добавление крафта ItemId
+  event.recipes.create.sandpaperPolishing(ItemId, ItemA)
+})
 
 

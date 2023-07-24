@@ -400,7 +400,7 @@ ServerEvents.recipes(event => {
 
     // добавление крафта ItemId
     let inter = ItemR
-    event.recipes.create.sequencedassembly(
+    event.recipes.create.sequenced_assembly(
         ItemId
     , itemIn, [
 //        ,event.recipes.create.pressing(inter, inter) // Шаблон пресса

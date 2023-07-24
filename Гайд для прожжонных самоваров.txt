@@ -391,3 +391,20 @@ ServerEvents.recipes(event => {
 
 
 Ну а теперь самый сложный и страшный из возможных типов крафта Create Последовательный сбор(можно уже боятся):
+
+
+ServerEvents.recipes(event => {
+    // удаление крафта всех кравтов ItemId
+    event.remove({output: ItemId})
+
+    // добавление крафта ItemId
+    let inter = ItemR // making a varrible to store the transition item makes the code more readable
+    event.recipes.create.sequencedassembly([
+        ItemId
+    ], itemIn, [
+//        ,event.recipes.create.pressing(inter, inter)
+//        ,event.recipes.create.deploying(inter, [inter, itemA])
+//        ,event.recipes.create.filling(inter, [inter, FluidId])
+//        ,event.recipes.create.cutting(inter, inter)
+    ]).transitionalItem(inter).loops(2)
+})

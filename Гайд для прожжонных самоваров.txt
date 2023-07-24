@@ -378,4 +378,13 @@ ServerEvents.recipes(event => {
   event.recipes.create.sandpaperPolishing(ItemId, ItemA)
 })
 
+Шаблон Дозатора
+Для него свойственно 1 2 3 4 5 9
 
+ServerEvents.recipes(event => {
+  // удаление крафта всех кравтов ItemId
+  event.remove({output: ItemId})
+  
+  // добавление крафта ItemId
+  event.recipes.create.filling(ItemId, [Fluid.of(FluidId, 10), ItemA])
+})

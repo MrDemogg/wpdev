@@ -392,7 +392,6 @@ ServerEvents.recipes(event => {
 
 Ну а теперь самый сложный и страшный из возможных типов крафта Create Последовательный сбор(можно уже боятся):
 
-
 ServerEvents.recipes(event => {
     // удаление крафта всех кравтов ItemId
     event.remove({output: ItemId})
@@ -402,9 +401,10 @@ ServerEvents.recipes(event => {
     event.recipes.create.sequencedassembly([
         ItemId
     ], itemIn, [
-//        ,event.recipes.create.pressing(inter, inter)
-//        ,event.recipes.create.deploying(inter, [inter, itemA])
-//        ,event.recipes.create.filling(inter, [inter, FluidId])
-//        ,event.recipes.create.cutting(inter, inter)
+//        ,event.recipes.create.pressing(inter, inter) // Шаблон пресса
+//        ,event.recipes.create.deploying(inter, [inter, itemA]) //Шаблон руки
+//        ,event.recipes.create.filling(inter, [inter, FluidId]) //Шаблон дозатара
+//        ,event.recipes.create.cutting(inter, inter) // Шаблон пилы
     ]).transitionalItem(inter).loops(2)
 })
+

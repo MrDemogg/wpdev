@@ -27,7 +27,7 @@
 	},
 	"Sequenced Assembly": {
 		"prefix": "sequenced_assembly",
-		"body": "event.recipes.create.sequenced_assembly(\n\t[\n\t\tItem.of('${1:output ItemID}').withChance(${2:Chances})\n\t],\n\t'${3:input ItemID}',\n\t[\n\t\tevent.recipes.create.pressing('${4:initial ItemID}', '${5:final ItemID}')\n\t])\n\t.transitionalItem('${6:ItemID}')\n\t.loops(${:loops})",
+		"body": "event.recipes.create.sequenced_assembly(\n\t[\n\t\tItem.of('${1:output ItemID}').withChance(${2:Chances})\n\t],\n\t'${3:input ItemID}',\n\t[\n\t\tevent.recipes.create.pressing('${4:initial ItemID}', '${5:final ItemID}')\n\t])\n\t.transitionalItem('${6:ItemID}')\n\t.loops(${7:loops})",
 		"description": "Sequenced Assembly Craft"
 	},
 	"Mixing": {

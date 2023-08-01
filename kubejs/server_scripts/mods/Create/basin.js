@@ -1,16 +1,17 @@
+//'createbasin'
 ServerEvents.recipes(event => {
   // удаление крафта всех кравтов ItemId
-  event.remove({output: 'create:experience_block'})
+  event.remove({output: 'create:basin'})
   
   // добавление крафта ItemId
-    event.shaped('create:experience_block', [
-    'AAA',
-    'AAA',
-    'AAA'
+    event.shaped('create:basin', [
+    'A A',
+    'ACA',
+    'BBB'
   ], {
-    A: 'create_sa:heap_of_experience'
-//   ,B: ItemB
-//   ,C: ItemC
+    A: 'create:andesite_alloy'
+   ,B: 'create:iron_sheet'
+   ,C: 'extendedcrafting:black_iron_slate'
 //   ,D: ItemD
 //   ,E: ItemE
 //   ,F: ItemF

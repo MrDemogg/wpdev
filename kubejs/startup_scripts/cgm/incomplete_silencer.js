@@ -1,6 +1,6 @@
 StartupEvents.registry('item', event => {
     event.create('incomplete_silencer', 'basic')
-        .texture('wpd:item/glush')
-        .parentModel('wpd:item/glushitel')
+        .texture('wpd:glushitel/glush')
+        .parentModel('wpd:glushitel/glushitel')
         .displayName('Незаконченный глушитель')
 })

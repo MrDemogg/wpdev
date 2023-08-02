@@ -9,7 +9,7 @@ ServerEvents.recipes(event => {
     'AAA'
   ], {
     A: 'minecraft:iron_ingot'
-   ,B: 'immersiveengineering:dust_steel'
+   ,B: 'minecraft:obsidian'
 //   ,C: ItemC
 //   ,D: ItemD
 //   ,E: ItemE

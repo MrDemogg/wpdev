@@ -11,5 +11,4 @@ ServerEvents.recipes(event => {
     ,B: 'minecraft:smooth_stone_slab'
     ,C: 'minecraft:blaze_rod'
   }) 
-  event.shapeless('minecraft:sea_pickle', ['minecraft:kelp','minecraft:wither_rose'])
 })

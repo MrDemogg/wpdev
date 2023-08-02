@@ -10,7 +10,7 @@ ServerEvents.recipes(event => {
   ], {
     A: 'minecraft:carrot'
    ,B: 'immersiveengineering:plate_gold'
-   ,C: 'minecraft:gold_ingot'
+   ,C: '#forge:plates/gold'
 //   ,D: ItemD
 //   ,E: ItemE
 //   ,F: ItemF

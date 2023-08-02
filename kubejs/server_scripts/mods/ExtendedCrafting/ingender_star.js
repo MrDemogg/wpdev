@@ -4,11 +4,10 @@ ServerEvents.recipes(event => {
   
   // добавление крафта ItemId
   event.recipes.create.mechanicalCrafting('wps_utilities:enchantmenttablebase',[
-    '     ',
-    ' BBBB',
-    ' ACCA',
-    ' ACCA',
-    ' BBBB'
+    'BBBB',
+    'ACCA',
+    'ACCA',
+    'BBBB'
   ], {
     A: 'minecraft:diamond'
    ,B: 'minecraft:obsidian'

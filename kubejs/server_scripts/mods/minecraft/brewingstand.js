@@ -7,7 +7,7 @@ ServerEvents.recipes(event => {
     'ACA',
     'BBB'
   ], {
-     A: 'createdeco:cast_iron_ingot'
+     A: '#forge:ingots/cast_iron'
     ,B: 'minecraft:smooth_stone_slab'
     ,C: 'minecraft:blaze_rod'
   }) 

@@ -3,10 +3,10 @@ ServerEvents.recipes(event => {
   event.remove({output: 'immersiveengineering:sheetmetal_iron'})
   
   // добавление крафта ItemId
-    event.shaped('immersiveengineering:sheetmetal_iron', [
-    'AAA',
-    'AAA',
-    'AAA'
+    event.shaped('2x immersiveengineering:sheetmetal_iron', [
+    ' A ',
+    'A A',
+    ' A '
   ], {
     A: 'create:iron_sheet'
 //   ,B: ItemB

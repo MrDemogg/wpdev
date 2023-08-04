@@ -18,4 +18,8 @@ ServerEvents.recipes(event => {
     event.remove({output: 'create_sa:portable_drill'})
     event.remove({output: 'create_sa:slime_helmet'})
     event.remove({output: 'create_sa:slime_boots'})
+
+    event.remove({output: 'createdeco:cast_iron_ingot'})
+    event.remove({output: 'createindustry:steel_ingot'})
+    event.remove({output: 'createindustry:coal_coke'})
 })

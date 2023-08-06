@@ -1,0 +1,7 @@
+{
+  "parent": "wps_utilities:custom/grenade_launcher_base_shop",
+  "textures": {
+    "0": "wps_utilities:blocks/granade_launcher_base_shop",
+    "particle": "wps_utilities:items/pistol_badi"
+  }
+}

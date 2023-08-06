@@ -1,0 +1,8 @@
+{
+  "replace": false,
+  "values": [
+    "wps_utilities:enchantmenttablebase",
+    "wps_utilities:steamenginebase",
+    "wps_utilities:steamenginepiston"
+  ]
+}

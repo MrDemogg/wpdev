@@ -1,0 +1,7 @@
+{
+  "variants": {
+    "": {
+      "model": "wps_utilities:block/enchantmenttablebase"
+    }
+  }
+}

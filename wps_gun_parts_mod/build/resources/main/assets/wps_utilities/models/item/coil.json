@@ -1,0 +1,7 @@
+{
+  "parent": "wps_utilities:custom/pistol_prugina",
+  "textures": {
+    "0": "wps_utilities:blocks/pistol_prugin",
+    "particle": "wps_utilities:items/pistol_badi"
+  }
+}

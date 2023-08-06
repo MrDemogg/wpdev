@@ -1,0 +1,316 @@
+{
+  "mod_elements": [
+    {
+      "name": "Pistolbody",
+      "type": "item",
+      "sortid": 2,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "pistolbody",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/wpsutilities/item/PistolbodyItem.java",
+          "src/main/resources/assets/wps_utilities/models/item/pistolbody.json"
+        ]
+      }
+    },
+    {
+      "name": "WPsgunpartsmod",
+      "type": "tab",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "wps_utilities",
+      "metadata": {
+        "files": []
+      }
+    },
+    {
+      "name": "Pistoltrigger",
+      "type": "item",
+      "sortid": 1,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "trigger",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/wpsutilities/item/PistoltriggerItem.java",
+          "src/main/resources/assets/wps_utilities/models/item/trigger.json"
+        ]
+      }
+    },
+    {
+      "name": "Pistolcoil",
+      "type": "item",
+      "sortid": 3,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "coil",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/wpsutilities/item/PistolcoilItem.java",
+          "src/main/resources/assets/wps_utilities/models/item/coil.json"
+        ]
+      }
+    },
+    {
+      "name": "Pistolammo",
+      "type": "item",
+      "sortid": 4,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "pistolammo",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/wps_utilities/models/item/pistolammo.json",
+          "src/main/java/net/mcreator/wpsutilities/item/PistolammoItem.java"
+        ]
+      }
+    },
+    {
+      "name": "Pistolcap",
+      "type": "item",
+      "sortid": 5,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "pistolcap",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/wps_utilities/models/item/pistolcap.json",
+          "src/main/java/net/mcreator/wpsutilities/item/PistolcapItem.java"
+        ]
+      }
+    },
+    {
+      "name": "Grenadeammo",
+      "type": "item",
+      "sortid": 6,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "grenadeammo",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/wpsutilities/item/GrenadeammoItem.java",
+          "src/main/resources/assets/wps_utilities/models/item/grenadeammo.json"
+        ]
+      }
+    },
+    {
+      "name": "Grenadebase",
+      "type": "item",
+      "sortid": 7,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "grenadebase",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/wps_utilities/models/item/grenadebase.json",
+          "src/main/java/net/mcreator/wpsutilities/item/GrenadebaseItem.java"
+        ]
+      }
+    },
+    {
+      "name": "Wpcicon",
+      "type": "item",
+      "sortid": 8,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "wpcicon",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/wpsutilities/item/WpciconItem.java",
+          "src/main/resources/assets/wps_utilities/models/item/wpcicon.json"
+        ]
+      }
+    },
+    {
+      "name": "Shotgunbody",
+      "type": "item",
+      "sortid": 9,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "shotgunbody",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/wpsutilities/item/ShotgunbodyItem.java",
+          "src/main/resources/assets/wps_utilities/models/item/shotgunbody.json"
+        ]
+      }
+    },
+    {
+      "name": "Shutterthrust",
+      "type": "item",
+      "sortid": 10,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "shutterthrust",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/wps_utilities/models/item/shutterthrust.json",
+          "src/main/java/net/mcreator/wpsutilities/item/ShutterthrustItem.java"
+        ]
+      }
+    },
+    {
+      "name": "Forearm",
+      "type": "item",
+      "sortid": 11,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "forearm",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/wps_utilities/models/item/forearm.json",
+          "src/main/java/net/mcreator/wpsutilities/item/ForearmItem.java"
+        ]
+      }
+    },
+    {
+      "name": "Enchantmenttablebase",
+      "type": "block",
+      "sortid": 12,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "enchantmenttablebase",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/wps_utilities/models/item/enchantmenttablebase.json",
+          "src/main/resources/assets/wps_utilities/models/block/enchantmenttablebase.json",
+          "src/main/resources/assets/wps_utilities/blockstates/enchantmenttablebase.json",
+          "src/main/java/net/mcreator/wpsutilities/block/EnchantmenttablebaseBlock.java"
+        ]
+      }
+    },
+    {
+      "name": "Hotironingot",
+      "type": "item",
+      "sortid": 13,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "hotironingot",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/wpsutilities/item/HotironingotItem.java",
+          "src/main/resources/assets/wps_utilities/models/item/hotironingot.json"
+        ]
+      }
+    },
+    {
+      "name": "Ignite",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "ignite",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/wpsutilities/procedures/IgniteProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      }
+    },
+    {
+      "name": "Steamenginebase",
+      "type": "block",
+      "sortid": 14,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "steamenginebase",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/wps_utilities/models/item/steamenginebase.json",
+          "src/main/resources/assets/wps_utilities/blockstates/steamenginebase.json",
+          "src/main/java/net/mcreator/wpsutilities/block/SteamenginebaseBlock.java",
+          "src/main/resources/assets/wps_utilities/models/block/steamenginebase.json"
+        ]
+      }
+    },
+    {
+      "name": "Steamenginepiston",
+      "type": "block",
+      "sortid": 15,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "steamenginepiston",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/wps_utilities/models/item/steamenginepiston.json",
+          "src/main/resources/assets/wps_utilities/models/block/steamenginepiston.json",
+          "src/main/resources/assets/wps_utilities/blockstates/steamenginepiston.json",
+          "src/main/java/net/mcreator/wpsutilities/block/SteamenginepistonBlock.java"
+        ]
+      }
+    },
+    {
+      "name": "Steamenginebaserecipe",
+      "type": "recipe",
+      "compiles": true,
+      "locked_code": true,
+      "registry_name": "steamenginebaserecipe",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/wps_utilities/recipes/steamenginebaserecipe.json"
+        ]
+      }
+    }
+  ],
+  "variable_elements": [],
+  "sound_elements": [],
+  "language_map": {
+    "en_us": {
+      "item.wps_gun_parts_mod.wpcicon": "Wpcicon",
+      "item.wps_utilities.hotironingot": "Hot iron ingot",
+      "item.wps_utilities.trigger": "Trigger",
+      "item.wps_gun_parts_mod.trigger": "Trigger",
+      "item.wps_gun_parts_mod.pistolcap": "Pistol cap",
+      "item.wps_gun_parts_mod.grenadeammo": "Grenade launcher ammo shop",
+      "item.wps_gun_parts_mod.coil": "Coil",
+      "item.wps_gun_parts_mod.grenadebase": "Grenade launcher base",
+      "item.wps_gun_parts_mod.pistolammo": "Pistol ammo",
+      "block.wps_utilities.enchantmenttablebase": "Enchantmenttablebase",
+      "item.wps_utilities.forearm": "Forearm",
+      "item.wps_gun_parts_mod.shotgunbody": "Shotgun body",
+      "item.wps_utilities.pistolammo": "Pistol ammo",
+      "item.wps_utilities.coil": "Coil",
+      "itemGroup.tabwps_utilities": "WPC\u0027s utilities",
+      "block.wps_utilities.steamenginebase": "Steam engine base",
+      "block.wps_gun_parts_mod.enchantmenttablebase": "Enchantmenttablebase",
+      "item.wps_gun_parts_mod.pistolbody": "Pistol body",
+      "item.wps_utilities.wpcicon": "Wpcicon",
+      "block.wps_utilities.steamenginepiston": "Steam engine piston",
+      "item.wps_gun_parts_mod.forearm": "Forearm",
+      "item.wps_utilities.pistolcap": "Pistol cap",
+      "item.wps_utilities.grenadebase": "Grenade launcher base",
+      "item.wps_utilities.shutterthrust": "shutter thrust",
+      "item.wps_utilities.pistolbody": "Pistol body",
+      "item.wps_utilities.grenadeammo": "Grenade launcher ammo shop",
+      "item.wps_gun_parts_mod.shutterthrust": "shutter thrust",
+      "item.wps_utilities.shotgunbody": "Shotgun body"
+    }
+  },
+  "foldersRoot": {
+    "name": "~",
+    "children": []
+  },
+  "workspaceSettings": {
+    "modid": "wps_utilities",
+    "modName": "WP\u0027s utilities",
+    "version": "0.1",
+    "author": "Hardziplay",
+    "license": "Custom license",
+    "disableForgeVersionCheck": true,
+    "serverSideOnly": false,
+    "modPicture": "minecraft_title",
+    "requiredMods": [],
+    "dependencies": [],
+    "dependants": [],
+    "mcreatorDependencies": [],
+    "currentGenerator": "forge-1.19.2",
+    "modElementsPackage": "net.mcreator.wpsutilities",
+    "lockBaseModFiles": false
+  },
+  "mcreatorVersion": 202300224119
+}

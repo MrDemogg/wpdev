@@ -1,0 +1,23 @@
+modLoader="javafml"
+loaderVersion="[43,)"
+license="Custom license"
+
+[[mods]]
+modId="wps_utilities"
+version="0.1"
+displayName="WP's utilities"
+credits="Created using mod maker MCreator - https://mcreator.net/about"
+displayURL="https://mcreator.net"
+logoFile="logo.png"
+authors="Hardziplay"
+
+[[dependencies.wps_utilities]]
+    modId="minecraft"
+    mandatory=true
+    versionRange="[1.19.2]"
+    ordering="NONE"
+    side="BOTH"
+
+
+
+

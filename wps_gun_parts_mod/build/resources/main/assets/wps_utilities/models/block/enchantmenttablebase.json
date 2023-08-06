@@ -1,0 +1,9 @@
+{
+  "parent": "wps_utilities:custom/enchant-table",
+  "textures": {
+    "all": "wps_utilities:blocks/enchant_table",
+    "particle": "wps_utilities:blocks/enchant_table",
+    "2": "wps_utilities:blocks/enchant_table"
+  },
+  "render_type": "solid"
+}

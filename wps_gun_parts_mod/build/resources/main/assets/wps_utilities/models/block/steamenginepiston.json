@@ -1,0 +1,9 @@
+{
+  "parent": "wps_utilities:custom/steam_piston",
+  "textures": {
+    "all": "wps_utilities:blocks/cam_linkage",
+    "particle": "wps_utilities:blocks/cam_linkage",
+    "8": "wps_utilities:blocks/cam_linkage"
+  },
+  "render_type": "solid"
+}

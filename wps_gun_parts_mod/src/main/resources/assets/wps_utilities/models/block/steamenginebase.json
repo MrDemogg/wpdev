@@ -1,0 +1,9 @@
+{
+  "parent": "wps_utilities:custom/steam_piston_2",
+  "textures": {
+    "all": "wps_utilities:blocks/engine",
+    "particle": "wps_utilities:blocks/engine",
+    "1": "wps_utilities:blocks/engine"
+  },
+  "render_type": "solid"
+}

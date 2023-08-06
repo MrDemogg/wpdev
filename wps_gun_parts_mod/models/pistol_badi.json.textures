@@ -1,0 +1,10 @@
+{
+  "mappings": {
+    "default": {
+      "map": {
+        "1": "pistol_badi"
+      },
+      "name": "default"
+    }
+  }
+}

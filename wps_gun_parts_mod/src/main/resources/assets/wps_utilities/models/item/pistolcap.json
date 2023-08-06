@@ -1,0 +1,7 @@
+{
+  "parent": "wps_utilities:custom/pistol_cap",
+  "textures": {
+    "2": "wps_utilities:blocks/pistol_cap",
+    "particle": "wps_utilities:items/pistol_badi"
+  }
+}

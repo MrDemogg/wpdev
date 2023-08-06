@@ -1,0 +1,7 @@
+{
+  "parent": "wps_utilities:custom/pistol_shop",
+  "textures": {
+    "0": "wps_utilities:blocks/pistol_shop",
+    "particle": "wps_utilities:items/pistol_badi"
+  }
+}

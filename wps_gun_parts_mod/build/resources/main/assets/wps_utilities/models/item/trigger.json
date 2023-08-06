@@ -1,0 +1,7 @@
+{
+  "parent": "wps_utilities:custom/pistol_kurok",
+  "textures": {
+    "0": "wps_utilities:blocks/pistol_kurok",
+    "particle": "wps_utilities:items/pistol_badi"
+  }
+}

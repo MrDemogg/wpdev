@@ -1,0 +1,10 @@
+{
+  "mappings": {
+    "default": {
+      "map": {
+        "0": "granade_launcher_base_badi"
+      },
+      "name": "default"
+    }
+  }
+}

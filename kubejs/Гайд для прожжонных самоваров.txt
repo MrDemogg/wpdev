@@ -313,7 +313,7 @@ ServerEvents.recipes(event => {
   event.remove({output: ItemId})
   
   // добавление крафта ItemId
-  event.recipes.create.mechanicalCrafting(, [
+  event.recipes.create.mechanicalCrafting(ItemId, [
     '     ',
     '     ',
     '     ',

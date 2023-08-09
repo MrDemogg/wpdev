@@ -14,4 +14,19 @@ ServerEvents.recipes(event => {
 //        ,event.recipes.create.filling(inter, [inter, FluidId]) //Шаблон дозатара
 //        ,event.recipes.create.cutting(inter, inter) // Шаблон пилы
     ]).transitionalItem(inter).loops(2)
+  event.recipes.create.mechanicalCrafting('ic2:generator', [
+    'BBB',
+    'ADA',
+    'BBB'
+  ], {
+    A: 'ic2:re_battery'
+   ,B: '#forge:ingots/refined_iron'
+//   ,C: '#forge:wires/copper'
+   ,D: '#forge:plates/copper'
+//   ,E: ItemE
+//   ,F: ItemF
+//   ,G: ItemG
+//   ,H: ItemH
+//   ,I: ItemI
+  })
 })
